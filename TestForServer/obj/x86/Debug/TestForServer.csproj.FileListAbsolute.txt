@@ -1,0 +1,5 @@
+D:\Проекты\TestForServer\TestForServer\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Проекты\TestForServer\TestForServer\bin\Debug\TestForServer.dll
+D:\Проекты\TestForServer\TestForServer\bin\Debug\TestForServer.pdb
+D:\Проекты\TestForServer\TestForServer\obj\x86\Debug\TestForServer.dll
+D:\Проекты\TestForServer\TestForServer\obj\x86\Debug\TestForServer.pdb

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Persistent.BaseImpl.v13.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Persistent.BaseImpl.BaseObject">
+
+            <summary>
+                <para>Represents one of the base persistent classes from which business classes can be inherited.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Persistent.BaseImpl.BaseObject.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+                <para>Used to initialize a new instance of a BaseObject descendant, in a particular <a href="http://documentation.devexpress.com/#XPO/CustomDocument2022">Session</a>.
+
+</para>
+            </summary>
+            <param name="session">
+		A <b>DevExpress.Xpo.Session</b> object which represents a persistent object's cache where the business object will be instantiated.
+
+
+            </param>
+
+
+        </member>
+        

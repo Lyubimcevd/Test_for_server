@@ -1,0 +1,21 @@
+TQC(2,I).EQ.0.AND.TQC(3,I).NE.0.AND.TQC(1,I).LT.0) GOTO 50
+      if(iprtsl.eq.0.and.iprtst.eq.0) goto 50 
+      if(QZ(2,I).EQ.0) GOTO 50
+      if((TQ(2,I)-TQ(2,I)/100*100).EQ.81.OR.(TQ(2,I)-TQ(2,I)/100*100).EQ
+     1.82.OR.(TQ(2,I)-TQ(2,I)/100*100).EQ.83)
+     2QZ(2,I)=QZ(2,I)+(QZ(2,I)*(iprtsl/100)+50)/100                                  SPPF0028
+      if((TQ(2,I)-TQ(2,I)/100*100).NE.81.AND.(TQ(2,I)-TQ(2,I)/100*100).
+     1NE.82.AND.(TQ(2,I)-TQ(2,I)/100*100).NE.83)
+     2QZ(2,I)=QZ(2,I)+(QZ(2,I)*(iprtst/100)+50)/100
+  50  CONTINUE                                                          SPPF0032
+      GOTO 30
+  35  DO 51 I=2,NT
+      IF(TQC(2,I).EQ.0.AND.TQC(3,I).NE.0.AND.TQC(1,I).LT.0) GOTO 51
+      if(iprhz.eq.0) goto 52
+      IF(QZ(1,I).LT.1) GOTO 52
+      QZ(1,I)=QZ(1,I)-(QZ(1,I)*iprhz+50)/100
+ 52   if(iprrz.eq.0) goto 51
+      if(QZ(2,I).EQ.0) GOTO 51
+      QZ(2,I)=QZ(2,I)+(QZ(2,I)*iprrz+50)/100
+  51  CONTINUE
+  30  WRIT
